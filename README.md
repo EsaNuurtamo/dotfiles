@@ -31,3 +31,12 @@ config add .bashrc
 config commit -m "Add bashrc"
 config push
 ````
+
+### Install neede programs
+- Install iTerm2
+- Install fish and fisher
+- Link the preferences in iterm2: General -> Preferences -> load from custom folder
+- Install tide theme
+
+Check out inspiration from here:
+https://github.com/craftzdog/dotfiles-public
