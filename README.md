@@ -32,7 +32,7 @@ config commit -m "Add bashrc"
 config push
 ````
 
-### Install neede programs
+### Terminal and fish shell
 - Install iTerm2
 - Install fish and fisher
 - Link the preferences in iterm2: General -> Preferences -> load from custom folder
@@ -44,6 +44,26 @@ brew update
 brew install cask fish fisher git node 
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font iterm2 karabiner-elements
+````
+
+### Install editor and plugins
+- VSCode is easy to setup
+- Here is neovim config that offers most things that VSCode has (linting, global search, autosuggestions, typescript checking)
+````
+brew install nvim 
+````
+Create a symbolic link from neovim to the sandard place where VIM is installed:
+`ln -s (which nvim) /usr/local/bin/vim`))
+
+## Plugin manager for Neovim:
+````
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+````
+Open neovim and it will install the plugins that are defined in init.vim:
+````
+nvim //open editor
+:PlugsInstall //in the editor
 ````
 
 Check out inspiration from here:
