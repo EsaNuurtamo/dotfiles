@@ -3,13 +3,12 @@
 ## Install on a new computer
 
 ````
-//make a alias for git that uses .cfg directory 
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 //gitignore the config repo itself
 echo ".cfg" >> .gitignore
 git clone --bare git@github.com:EsaNuurtamo/dotfiles.git $HOME/.cfg
 
+//make a alias for git that uses .cfg directory
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 // checkout files from the remote
