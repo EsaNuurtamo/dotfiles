@@ -36,7 +36,15 @@ config push
 - Install iTerm2
 - Install fish and fisher
 - Link the preferences in iterm2: General -> Preferences -> load from custom folder
-- Install tide theme
+- Install custom fonts
+
+#### Copy these commands
+````
+brew update 
+brew install cask fish fisher git node 
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font iterm2 karabiner-elements
+````
 
 Check out inspiration from here:
 https://github.com/craftzdog/dotfiles-public
