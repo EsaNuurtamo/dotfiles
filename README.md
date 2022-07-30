@@ -2,8 +2,8 @@
 
 ## Install on a new computer
 
+Do the following commands in HOME -folder:
 ````
-
 //gitignore the config repo itself
 echo ".cfg" >> .gitignore
 git clone --bare git@github.com:EsaNuurtamo/dotfiles.git $HOME/.cfg
@@ -20,7 +20,6 @@ config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
 xargs -I{} mv {} .config-backup/{}
 
 config config --local status.showUntrackedFiles no
-
 ````
 
 ## Start commiting your dotfile changes
